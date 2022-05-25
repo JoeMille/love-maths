@@ -39,7 +39,7 @@ function runGame(gameType) {
 }
 
 /**
- * Checks the answer agaist the first element in
+ * Checks the answer against the first element in
  * the returned calculateCorrectAnswer array
  */
 function checkAnswer() {
@@ -90,13 +90,13 @@ function incrementScore() {
 }
 
 /**
- * Gets the current tally of incorrect answers from the DOM and increments it by 1 
- * */
+ * Gets the current tally of incorrect answers from the DOM and increments it by 1
+ */
 function incrementWrongAnswer() {
 
     let oldScore = parseInt(document.getElementById("incorrect").innerText);
     document.getElementById("incorrect").innerText = ++oldScore;
-
+    
 }
 
 function displayAdditionQuestion(operand1, operand2) {
